@@ -4,94 +4,89 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Alcalá Capital</title>
- .hero {
-  min-height: 75vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 48px 20px;
-  color: white;
-  background:
-    linear-gradient(rgba(11,18,32,0.65), rgba(11,18,32,0.65)),
-    url("hero.jpg");
-  background-size: cover;
-  background-position: center;
-}
+  <meta name="description" content="Student-led investment organization at the University of San Diego focused on rigorous research and disciplined decision-making." />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <div class="nav">
-    <div class="wrap">
-      <a href="#about">About</a>
-      <a href="#divisions">Divisions</a>
-      <a href="#report">Semester Review</a>
-      <a href="#contact">Contact</a>
+  <header class="nav" role="banner">
+    <div class="wrap nav-inner">
+      <a class="logo" href="#">Alcalá Capital</a>
+      <nav aria-label="Primary" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#divisions">Divisions</a>
+        <a href="#report">Semester Review</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div class="hero">
-    <div class="wrap">
+  <section class="hero" role="img" aria-label="Students collaborating over financial research">
+    <div class="hero-inner wrap">
       <h1>Alcalá Capital</h1>
-      <p class="muted" style="color:#cbd5e1;">
-        Student-led investment organization at the University of San Diego focused on rigorous research, disciplined decision-making, and professional-grade outputs.
-      </p>
+      <p class="muted">Student-led investment organization at the University of San Diego focused on rigorous research, disciplined decision-making, and professional-grade outputs.</p>
       <a class="btn" href="#divisions">Explore Divisions</a>
     </div>
-  </div>
+  </section>
 
-  <div id="about" class="section">
-    <div class="wrap">
-      <h2>Mission</h2>
-      <p>
-        Alcalá Capital develops investment judgment through structured analysis, clear frameworks, and consistent execution.
-      </p>
-      <div class="card">
-        <b>What we publish:</b> semester investment reviews, case memos, and portfolio performance summaries.
-      </div>
-    </div>
-  </div>
-
-  <div id="divisions" class="section" style="background:#ffffff;">
-    <div class="wrap">
-      <h2>Divisions</h2>
-      <div class="grid">
+  <main>
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2>Mission</h2>
+        <p>Alcalá Capital develops investment judgment through structured analysis, clear frameworks, and consistent execution.</p>
         <div class="card">
-          <h3>Special Situations</h3>
-          <p>Distressed, event-driven, capital structure, and complex transactions with catalyst-driven thinking.</p>
-        </div>
-        <div class="card">
-          <h3>Wealth Management</h3>
-          <p>Portfolio construction, performance review, risk controls, and disciplined process.</p>
-        </div>
-        <div class="card">
-          <h3>Equity Research</h3>
-          <p>Fundamental research and thesis-driven stock pitches with defensible assumptions.</p>
+          <strong>What we publish:</strong> semester investment reviews, case memos, and portfolio performance summaries.
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div id="report" class="section" style="background:#f5f7fb;">
-    <div class="wrap">
-      <h2>Semester Investment Review</h2>
-      <p>
-        Add your end-of-semester PDF here and a short executive summary.
-      </p>
-      <div class="card">
-        <b>Placeholder:</b> Upload PDF to this repo and link it here once ready.
+    <section id="divisions" class="section light">
+      <div class="wrap">
+        <h2>Divisions</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Special Situations</h3>
+            <p>Distressed, event-driven, capital structure, and complex transactions with catalyst-driven thinking.</p>
+          </div>
+          <div class="card">
+            <h3>Wealth Management</h3>
+            <p>Portfolio construction, performance review, risk controls, and disciplined process.</p>
+          </div>
+          <div class="card">
+            <h3>Equity Research</h3>
+            <p>Fundamental research and thesis-driven stock pitches with defensible assumptions.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div id="contact" class="section">
+    <section id="report" class="section muted-section">
+      <div class="wrap">
+        <h2>Semester Investment Review</h2>
+        <p>Add your end-of-semester PDF here and a short executive summary.</p>
+        <div class="card">
+          <strong>Placeholder:</strong> Upload a PDF named <code>report.pdf</code> to this repo and link it here once ready.
+          <div class="report-link"><a href="/report.pdf">View report (when uploaded)</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p>For partnerships, guest speakers, or interest in joining, email: <a href="mailto:juanmanueldiaz@sandiego.edu"><strong>juanmanueldiaz@sandiego.edu</strong></a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="wrap">
-      <h2>Contact</h2>
-      <p>
-        For partnerships, speakers, or interest in joining, email: <b>YOUR_EMAIL_HERE</b>
-      </p>
+      <small>&copy; Alcalá Capital — University of San Diego</small>
+      <nav class="footer-links">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </div>
+  </footer>
 
 </body>
 </html>
